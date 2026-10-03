@@ -1,0 +1,3 @@
+This project wraps @_davideast/stitch-mcp by David East, licensed under Apache-2.0.
+Upstream: https://github.com/davideast/stitch-mcp
+This wrapper is independent and is not endorsed by Google or the upstream maintainer.
