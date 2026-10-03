@@ -1,0 +1,12 @@
+{
+  "name": "stitch-mcp-chatgpt",
+  "version": "1.0.0",
+  "description": "ChatGPT/Codex wrapper for davideast/stitch-mcp.",
+  "mcpServers": "../.mcp.json",
+  "skills": "../skills/",
+  "interface": {
+    "displayName": "Stitch MCP",
+    "shortDescription": "Browse and build from Google Stitch designs.",
+    "developerName": "vitorcalvi wrapper / davideast upstream"
+  }
+}
