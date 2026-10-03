@@ -1,0 +1,20 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate manifests and scan for secrets
+        run: python3 scripts/validate.py
+      - name: Smoke test upstream CLI
+        run: bash scripts/smoke-test.sh
+      - name: Build Docker image
+        run: docker build -t stitch-mcp-chatgpt:ci .
